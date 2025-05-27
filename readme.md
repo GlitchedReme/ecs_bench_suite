@@ -2,7 +2,7 @@
 
 A suite of benchmarks designed to test and compare Rust ECS library performance across a variety of challenging circumstances.
 
-The full benchmark report is available [here](https://rust-gamedev.github.io/ecs_bench_suite/target/criterion/report/index.html).
+~~The full benchmark report is available [here](https://rust-gamedev.github.io/ecs_bench_suite/target/criterion/report/index.html).~~
 
 ## Status
 
