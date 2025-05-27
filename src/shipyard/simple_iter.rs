@@ -1,16 +1,16 @@
 use cgmath::*;
 use shipyard::*;
 
-#[derive(Copy, Clone)]
+#[derive(Component, Copy, Clone)]
 struct Transform(Matrix4<f32>);
 
-#[derive(Copy, Clone)]
+#[derive(Component, Copy, Clone)]
 struct Position(Vector3<f32>);
 
-#[derive(Copy, Clone)]
+#[derive(Component, Copy, Clone)]
 struct Rotation(Vector3<f32>);
 
-#[derive(Copy, Clone)]
+#[derive(Component, Copy, Clone)]
 struct Velocity(Vector3<f32>);
 
 pub struct Benchmark(World);
@@ -42,7 +42,7 @@ impl Benchmark {
                     );
                 }
             },
-        ).unwrap();
+        );
 
         Self(world)
     }
@@ -56,6 +56,6 @@ impl Benchmark {
                         position.0 += velocity.0;
                     })
             },
-        ).unwrap();
+        );
     }
 }
